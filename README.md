@@ -1,6 +1,6 @@
 # Equatable for PHP
 
-> Provides `EquatableInterface` for PHP 7+. Inspired by Java.
+> Provides `EquatableInterface` for PHP 7+ (inspired by Java).
 
 [![Version](https://img.shields.io/packagist/v/litgroup/equatable.svg)](https://packagist.org/packages/litgroup/equatable)
 [![Downloads](https://img.shields.io/packagist/dt/litgroup/equatable.svg)](https://packagist.org/packages/litgroup/equatable)
