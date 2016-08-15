@@ -2,6 +2,11 @@
 
 > Provides `EquatableInterface` for PHP 7+. Inspired by Java.
 
+[![Version](https://img.shields.io/packagist/v/litgroup/equatable.svg)](https://packagist.org/packages/litgroup/equatable)
+[![Downloads](https://img.shields.io/packagist/dt/litgroup/equatable.svg)](https://packagist.org/packages/litgroup/equatable)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)][license]
+
+
 ```php
 interface EquatableInterface
 {
@@ -22,7 +27,6 @@ use LitGroup\Equatable\EquatableInterface;
 class User
 {
     private $username;
-    
     private $email;
     
     public function __construct(string $username, string $email)
@@ -54,3 +58,8 @@ class User
     }
 }
 ```
+
+## LICENSE
+See [LICENSE][license] file.
+
+[license]: https://raw.githubusercontent.com/LitGroup/enumerable.php/master/LICENSE
