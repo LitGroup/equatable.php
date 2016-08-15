@@ -62,4 +62,4 @@ class User
 ## LICENSE
 See [LICENSE][license] file.
 
-[license]: https://raw.githubusercontent.com/LitGroup/enumerable.php/master/LICENSE
+[license]: https://raw.githubusercontent.com/LitGroup/equatable.php/master/LICENSE
