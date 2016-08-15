@@ -1,0 +1,25 @@
+{
+    "name": "litgroup/equatable",
+    "description": "Provides EquatableInterface for PHP 7+",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Shamritskiy",
+            "email": "roman@litgroup.ru"
+        }
+    ],
+    "require": {
+      "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LitGroup\\Equatable\\": "src/"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "/.gitignore"
+        ]
+    }
+}
