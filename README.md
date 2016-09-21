@@ -1,19 +1,26 @@
 # Equatable for PHP
 
-> Provides `EquatableInterface` for PHP 7+ (inspired by Java).
+> Provides `Equatable` for PHP 7+ (inspired by Java).
 
 [![Version](https://img.shields.io/packagist/v/litgroup/equatable.svg)](https://packagist.org/packages/litgroup/equatable)
 [![Downloads](https://img.shields.io/packagist/dt/litgroup/equatable.svg)](https://packagist.org/packages/litgroup/equatable)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)][license]
 
+## Installation
+
+```
+composer require litgroup/equatable:^2.0
+```
+
+## What is inside
 
 ```php
-interface EquatableInterface
+interface Equatable
 {
     /**
-     * Indicates whether some other object is "equal to" this one.
+     * Checks if this object is equal to another one.
      */
-    public function equals(EquatableInterface $other): bool;
+    public function equals(Equatable $another): bool;
 }
 ```
 
@@ -22,7 +29,7 @@ interface EquatableInterface
 ```php
 namespace Acme;
 
-use LitGroup\Equatable\EquatableInterface;
+use LitGroup\Equatable\Equatable;
 
 class User
 {
@@ -46,14 +53,14 @@ class User
     }
     
     /**
-     * Example of implementation of EquatableInterface::equals()
+     * Example of implementation of Equatable::equals()
      */
-    public function equals(EquatableInterface $other): bool
+    public function equals(Equatable $another): bool
     {
         return 
-            $other instanceOf User &&
-            $other->getUsername() == $this->getUsername() &&
-            $other->getEmail() == $this->getEmail()
+            $another instanceOf User &&
+            $another->getUsername() == $this->getUsername() &&
+            $another->getEmail() == $this->getEmail()
         ;
     }
 }

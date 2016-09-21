@@ -15,10 +15,10 @@ namespace LitGroup\Equatable;
  *
  * @author Roman Shamritskiy <roman@litgroup.ru>
  */
-interface EquatableInterface
+interface Equatable
 {
     /**
-     * Indicates whether some other object is "equal to" this one.
+     * Checks if this object is equal to another one.
      */
-    public function equals(EquatableInterface $other): bool;
+    public function equals(Equatable $another): bool;
 }
