@@ -11,7 +11,7 @@
 namespace LitGroup\Equatable;
 
 /**
- * Marks object as equatable.
+ * Makes an object equatable.
  *
  * @author Roman Shamritskiy <roman@litgroup.ru>
  */
